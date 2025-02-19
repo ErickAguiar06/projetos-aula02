@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Médica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Agenda telefonica</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Cadastro</h2>
+            <form id="cadastro">
+                <input type="text" name="telefone" id="telefone" placeholder="Digite seu numero" required>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                <input type="text" name="obs" id="obs" placeholder="Observação" required>
+                <button type="submit">Cadastrar</button>
+            </form>            
+        </section>
+        <section>
+            <h2>Telefones</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Telefone</th>
+                    <th>Nome</th>
+                    <th>Obs</th>
+                    <th>Alterar ou Excluir</th>
+                </tr>
+            </thead>
+            <tbody id="telefones"></tbody>
+            </table>
+        </section>
+    </main>
+    <footer id="msg">Mensagem: </footer>
+</body>
+<script src="script.js"></script>
+</html>

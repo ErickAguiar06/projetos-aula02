@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Médica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Feedbacks</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Cadastro</h2>
+            <form id="cadastro">
+                <input type="date" name="data" id="data" placeholder="Digite a data" required>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                <input type="text" name="email" id="email" placeholder="Digite seu email" required>
+                <input type="text" name="feedback" id="feedback" placeholder="Digite seu feedback" required>
+                <button type="submit">Cadastrar</button>
+            </form>            
+        </section>
+        <section>
+            <h2>Lista de Feedbacks</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Data</th>
+                    <th>Nome</th>
+                    <th>email</th>
+                    <th>feedback</th>
+                </tr>
+            </thead>
+            <tbody id="feedbacks"></tbody>
+            </table>
+        </section>
+    </main>
+    <footer id="msg">Mensagem: </footer>
+</body>
+<script src="script.js"></script>
+</html>
